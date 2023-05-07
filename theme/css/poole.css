@@ -84,7 +84,7 @@
     margin-bottom: .5rem;
     font-weight: bold;
     line-height: 1.25;
-    color: #313131;
+    /*color: #313131;*/
     text-rendering: optimizeLegibility;
   }
   h1 {
