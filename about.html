@@ -84,65 +84,6 @@
 	</div>
 </div>	<div class="content container">
     <h1>About Me</h1>
-    
-
-    <script type="application/ld+json">
-{
-"@context": "http://www.schema.org",
-"@type": "Person",
-"@id": "https://www.cameronmacleod.com/#person",
-"name": "Vincent Doh",
-"nationality": "Ghanaian",
-"alumniOf": [
-    {
-     "@type": "CollegeOrUniversity",
-     "name": "Kofi Annan ICT Institute",
-     "sameAs": "https://en.wikipedia.org/wiki/University_of_Edinburgh"
-    }
-],
-"gender": "Male",
-"Description": "software Engineer",
-"url": "https://www.vindoh.com",
-"image": "https://
-				<a class="sidebar-nav-item" href="https://www.flickr.com/photos/rotor132" aria-label="flickr">
-					<i class="fa fa-flickr"></i>
-				</a>/images/profile.jpg",
-"sameAs": [
-    "https://twitter.com/notexactlyawe",
-    "https://www.linkedin.com/in/vincent-doh-0b723121a",
-    "https://github.com/vindoh-3",
-    "https://angel.co/u/cameron-macleod-2",
-    "https://stackoverflow.com/users/1546934/cjm",
-    "https://wa.me/233208841157"
-    ]
-}
-</script>
-
-<script>
-var email;
-
-function add_mailto() {
-  const elem = document.getElementById("emailclick");
-  elem.href = `mailto:${email}`;
-}
-
-function replace_email() {
-  // short function to prevent spambots from scraping my email
-  const domain = "gmail.com";
-  const name = [16, 30, 18, 16, 31, 22, 28, 23, 66, 68, 67];
-  const xor_with = 115;
-  let constructed = "";
-  name.forEach(function(i) {
-    constructed += String.fromCharCode(i ^ xor_with);
-  })
-  email = `${constructed}@${domain}`;
-  const elem = document.getElementById("emailclick");
-  elem.text = email;
-  // need to delay this so that the mailto gets added after the click, otherwise
-  // an unexpected mail dialogue will popup
-  window.setTimeout(add_mailto, 100);
-}
-</script>
 
 <p>Hello! I'm Vincent, and this is my personal blog. New posts come out sometimes, and usually are on technical topics related to software development. If you want to contact me you can email me at <a href="#" id="emailclick" onclick="replace_email()">click to reveal</a> or find me in one of the sidebar links.</p>
 <p>I'm currently an associate product manager at Google. Previously I've done a few internships in software development (see my <a href="/cv.pdf">CV</a>) and I studied Computer Science at the Kofi Annan ICT Institute.</p>
@@ -150,170 +91,133 @@ function replace_email() {
 <p>This is my personal site and views presented here do not necessarily reflect those of my employer.</p>
 <!-- Begin Mailchimp Signup Form -->
 <div id="mc_embed_signup">
-    <form action="https://vindoh-3.github.io/vincentdoh/" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div id="mc_embed_signup_scroll">
-            <h2>No spam, just new posts. Choose what you receive and unsubscribe whenever.</h2>
-            <div class="mc-field-group">
-                <label for="mce-EMAIL">Email Address </label>
-                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-            </div>
-
-
-			<div class="about-stats">
-                <h4 class="stat-title">My Skills</h4>
-                <div class="progress-bars">
-                    <div class="progress-bar">
-                        <p class="prog-title">html5</p>
-                        <div class="progress-con">
-                            <p class="prog-text">80%</p>
-                            <div class="progress">
-                                <span class="html"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">css3</p>
-                        <div class="progress-con">
-                            <p class="prog-text">95%</p>
-                            <div class="progress">
-                                <span class="css"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">javascript</p>
-                        <div class="progress-con">
-                            <p class="prog-text">75%</p>
-                            <div class="progress">
-                                <span class="js"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">ReactJS</p>
-                        <div class="progress-con">
-                            <p class="prog-text">75%</p>
-                            <div class="progress">
-                                <span class="react"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">NodeJS</p>
-                        <div class="progress-con">
-                            <p class="prog-text">87%</p>
-                            <div class="progress">
-                                <span class="node"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Python</p>
-                        <div class="progress-con">
-                            <p class="prog-text">70%</p>
-                            <div class="progress">
-                                <span class="python"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-			<h4 class="stat-title">My Timeline</h4>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">2010 - present</p>
-                    <h5>Web Developer<span> - Vircrosoft</span></h5>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">2008 - 2011</p>
-                    <h5>Software Engineer<span> - Boogle, Inc.</span></h5>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">2016 - 2017</p>
-                    <h5>C++ Programmer<span> - Slime Tech</span></h5>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">2009 - 2013</p>
-                    <h5>Business Degree<span> - Sussex University</span></h5>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">2013 - 2016</p>
-                    <h5>Computer Science Degree<span> - Brookes University</span></h5>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">2017 - present</p>
-                    <h5>3d Animation<span> - Brighton University</span></h5>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="mc-field-group input-group">
-                <strong>Which posts do you want to receive?</strong>
-                <ul>
-                        <li><input type="checkbox" value="1" name="group[4534][1]" id="mce-group[4534]-4534-0" checked><label for="mce-group[4534]-4534-0">Blog posts</label></li>
-                        <li><input type="checkbox" value="2" name="group[4534][2]" id="mce-group[4534]-4534-1" checked><label for="mce-group[4534]-4534-1">Tutorials</label></li>
-                    </ul>
-            </div>
-            <div id="mce-responses" class="clear">
-                <div class="response" id="mce-error-response" style="display:none"></div>
-                <div class="response" id="mce-success-response" style="display:none"></div>
-            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ee6251a0e7d61c20060602217_f541a0bdba" tabindex="-1" value=""></div>
-            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-        </div>
-    </form>
-</div>
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-<script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-<!--End mc_embed_signup-->
-
+	<div class="about-stats">
+		<h4 class="stat-title">My Skills</h4>
+		<div class="progress-bars">
+			<div class="progress-bar">
+				<p class="prog-title">html5</p>
+				<div class="progress-con">
+					<p class="prog-text">80%</p>
+					<div class="progress">
+						<span class="html"></span>
+					</div>
+				</div>
+			</div>
+			<div class="progress-bar">
+				<p class="prog-title">css3</p>
+				<div class="progress-con">
+					<p class="prog-text">95%</p>
+					<div class="progress">
+						<span class="css"></span>
+					</div>
+				</div>
+			</div>
+			<div class="progress-bar">
+				<p class="prog-title">javascript</p>
+				<div class="progress-con">
+					<p class="prog-text">75%</p>
+					<div class="progress">
+						<span class="js"></span>
+					</div>
+				</div>
+			</div>
+			<div class="progress-bar">
+				<p class="prog-title">ReactJS</p>
+				<div class="progress-con">
+					<p class="prog-text">75%</p>
+					<div class="progress">
+						<span class="react"></span>
+					</div>
+				</div>
+			</div>
+			<div class="progress-bar">
+				<p class="prog-title">NodeJS</p>
+				<div class="progress-con">
+					<p class="prog-text">87%</p>
+					<div class="progress">
+						<span class="node"></span>
+					</div>
+				</div>
+			</div>
+			<div class="progress-bar">
+				<p class="prog-title">Python</p>
+				<div class="progress-con">
+					<p class="prog-text">70%</p>
+					<div class="progress">
+						<span class="python"></span>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
-
-
-
-	<div class="theme-btn">
-        <i class="fas fa-adjust"></i>
-    </div>
-    <script src="vin.js"></script>
+	<h4 class="stat-title">My Timeline</h4>
+	<div class="timeline">
+		<div class="timeline-item">
+			<div class="tl-icon">
+				<i class="fas fa-briefcase"></i>
+			</div>
+			<p class="tl-duration">2010 - present</p>
+			<h5>Web Developer<span> - Vircrosoft</span></h5>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+			</p>
+		</div>
+		<div class="timeline-item">
+			<div class="tl-icon">
+				<i class="fas fa-briefcase"></i>
+			</div>
+			<p class="tl-duration">2008 - 2011</p>
+			<h5>Software Engineer<span> - Boogle, Inc.</span></h5>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+			</p>
+		</div>
+		<div class="timeline-item">
+			<div class="tl-icon">
+				<i class="fas fa-briefcase"></i>
+			</div>
+			<p class="tl-duration">2016 - 2017</p>
+			<h5>C++ Programmer<span> - Slime Tech</span></h5>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+			</p>
+		</div>
+		<div class="timeline-item">
+			<div class="tl-icon">
+				<i class="fas fa-briefcase"></i>
+			</div>
+			<p class="tl-duration">2009 - 2013</p>
+			<h5>Business Degree<span> - Sussex University</span></h5>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+			</p>
+		</div>
+		<div class="timeline-item">
+			<div class="tl-icon">
+				<i class="fas fa-briefcase"></i>
+			</div>
+			<p class="tl-duration">2013 - 2016</p>
+			<h5>Computer Science Degree<span> - Brookes University</span></h5>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+			</p>
+		</div>
+		<div class="timeline-item">
+			<div class="tl-icon">
+				<i class="fas fa-briefcase"></i>
+			</div>
+			<p class="tl-duration">2017 - present</p>
+			<h5>3d Animation<span> - Brighton University</span></h5>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+			</p>
+		</div>
+	</div>
+</div>
+<div class="theme-btn">
+	<i class="fas fa-adjust"></i>
+</div>
+<script src="vin.js"></script>
 </body>
 </html>
